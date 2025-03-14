@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0 ">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- fonts awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<!-- fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<!-- favicon -->
+<link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <section class="subheader">
+        <nav>
+            <a href="index.html"><img src="Images/logo.png" alt=""></a>
+            <div class="navlinks" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="course.html">COURSES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>FAQ'S</h1>
+    </section>
+        
+     
+    <section class="faq">
+        <h1>Frequently Asked Questions</h1>
+        <p>Find answers to the most common questions about our platform.</p>
+        <div class="faq-item">
+            <button class="faq-question">1. What is Eduford?</button>
+            <div class="faq-answer">
+                <p>Eduford is an advanced platform designed to provide users with detailed insights and analysis, whether it's about crime statistics, weather forecasts, or other data-driven insights.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">2. How do I register on the platform?</button>
+            <div class="faq-answer">
+                <p>Click on the "Sign Up" button at the top-right corner of the page, fill in your details, and verify your email to start using our services.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">3. Is my data secure?</button>
+            <div class="faq-answer">
+                <p>Yes, we prioritize your data security. We implement encryption and follow strict privacy standards to ensure your information is protected.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">4. Can I update or delete my account information?</button>
+            <div class="faq-answer">
+                <p>Yes, you can update or delete your account information by navigating to the "Profile" section of your dashboard.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">5. Who can I contact for support?</button>
+            <div class="faq-answer">
+                <p>If you have any issues, feel free to reach out to us via email at <a href="mailto:support@Eduford.com">support@Eduford.com</a>.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="footer">
+        <div class="footer-logo">
+            <img src="Images/logo.png" alt="">
+            <p style="color: black;">support@Eduford.com</p>
+            <p style="color: black;">+91 7349432553</p>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="certified">
+                <img src="Images/iso.png" alt="ISO Certified">
+            </div>
+        </div>
+        <div>
+            <h2 style="margin-left: 250px;">For More Information Visit The Given Links</h2>
+            <p style="margin-top: 200px; margin-left: 300px;color: black; font-size: x-large;">&copy; 2024 Eduford. All Rights Reserved.</p>
+        </div>
+        <div class="footer-links">
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="privacy.html">Privacy policy</a></li>
+                    <li><a href="ioi.html">Eduford IOI</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script>
+        // FAQ Dropdown Functionality
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+    
+                // Toggle visibility of the answer
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    
+                // Optionally, change button style for active/inactive state
+                button.classList.toggle('active');
+            });
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+
+    // Check for saved theme in localStorage
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        body.classList.add('dark');
+        themeToggle.checked = true;
+    }
+
+    // Toggle theme and save preference
+    themeToggle.addEventListener('change', () => {
+        if (themeToggle.checked) {
+            body.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            body.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+        }
+    });
+});
+
+    </script>
+    
+    </body>
+    </html>
+    
+ 
+ 

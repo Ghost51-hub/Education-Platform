@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0 ">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- fonts awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<!-- fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<!-- favicon -->
+<link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <section class="subheader">
+        <nav>
+            <a href="index.html"><img src="Images/logo.png" alt=""></a>
+            <div class="navlinks" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="course.html">COURSES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>CONTACT US</h1>
+    </section>
+    <!-- contact us  -->
+     <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.0736760072728!2d77.27591422422266!3d28.627553884309076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce35319b6a7ff%3A0x127dca80423ad527!2sLaxmi%20Nagar%2C%20Block%20S1%2C%20Nanakpura%2C%20Shakarpur%2C%20Delhi%2C%20110092!5e0!3m2!1sen!2sin!4v1733581337559!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </section>
+     <section class="contact">
+        <div class="row">
+            <div class="contactcol">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5> Address</h5> 
+                        <p>Delhi</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone" ></i>
+                    <span>
+                        <h5>  +1 0123456789 </h5>
+                        <p>Monday to Friday, 10 Am to 6pm</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <span>
+                        <h5>info@Edufordtutorial.com </h5>
+                        <p>Email us Your query</p>   
+                    </span>
+                </div>
+            </div>
+            <div class="contactcol">
+            <form action="">
+                <input type="text" placeholder="Enter Your Name" required>
+                <input type="email" placeholder="Enter Your Email" required>
+                <input type="text" placeholder="Enter Your course" required>
+                <textarea rows="8" placeholder="message"></textarea>
+                <button type="submit" class="herobtn redbtn"> Send Message</button>
+            </form>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footer-logo">
+            <img src="Images/logo.png" alt="">
+            <p style="color: black;">support@Eduford.com</p>
+            <p style="color: black;">+91 7349432553</p>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="certified">
+                <img src="Images/iso.png" alt="ISO Certified">
+            </div>
+        </div>
+        <div>
+            <h2 style="margin-left: 250px;">For More Information Visit The Given Links</h2>
+            <p style="margin-top: 200px; margin-left: 300px;color: black; font-size: x-large;">&copy; 2024 Eduford. All Rights Reserved.</p>
+        </div>
+        <div class="footer-links">
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="privacy.html">Privacy policy</a></li>
+                    <li><a href="ioi.html">Eduford IOI</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+
+    // Check for saved theme in localStorage
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        body.classList.add('dark');
+        themeToggle.checked = true;
+    }
+
+    // Toggle theme and save preference
+    themeToggle.addEventListener('change', () => {
+        if (themeToggle.checked) {
+            body.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            body.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+        }
+    });
+});
+
+
+    </script> <script src="script.js"></script>
+</body>
+</html>

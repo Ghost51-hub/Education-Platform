@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0 ">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- fonts awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<!-- fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<!-- favicon -->
+<link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <section class="subheader">
+        <nav>
+            <a href="index.html"><img src="Images/logo.png" alt=""></a>
+            <div class="navlinks" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="course.html">COURSES</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>PRIVACY AND POLICY</h1>
+    </section>
+    <section>
+        <section class="privacy-policy">
+            <h1>Privacy Policy</h1>
+            <p>
+                At <strong>Eduford</strong>, we take your privacy seriously. This Privacy Policy explains how we collect, use, and protect your information when you interact with our platform.
+            </p>
+        
+            <h2>1. Information We Collect</h2>
+            <p>
+                We may collect the following types of information:
+            </p>
+            <ul>
+                <li><strong>Personal Information:</strong> Name, email address, phone number, or any details you provide when signing up or submitting forms.</li>
+                <li><strong>Location Data:</strong> To provide accurate results for crime statistics or weather forecasts, we may collect approximate location information.</li>
+                <li><strong>Technical Information:</strong> IP address, browser type, device information, and usage statistics to improve the performance of our platform.</li>
+            </ul>
+        
+            <h2>2. How We Use Your Information</h2>
+            <p>
+                Your data helps us provide better services and enhance user experience. We use your information for:
+            </p>
+            <ul>
+                <li>Generating accurate crime or weather reports.</li>
+                <li>Improving website features and functionality.</li>
+                <li>Communicating with you about updates or issues related to our services.</li>
+                <li>Ensuring the security and safety of our users and platform.</li>
+            </ul>
+        
+            <h2>3. Data Security</h2>
+            <p>
+                We implement robust security measures to protect your data against unauthorized access, alteration, disclosure, or destruction. However, no system is 100% secure, and we cannot guarantee absolute data security.
+            </p>
+        
+            <h2>4. Cookies</h2>
+            <p>
+                Our platform uses cookies to enhance your browsing experience. These cookies help us analyze traffic, remember user preferences, and improve site functionality. You can disable cookies in your browser settings if preferred.
+            </p>
+        
+            <h2>5. Third-Party Services</h2>
+            <p>
+                We may use third-party tools or APIs to enhance functionality, such as maps or analytics services. These providers may collect data according to their own privacy policies.
+            </p>
+        
+            <h2>6. User Rights</h2>
+            <p>
+                You have the right to access, update, or delete your personal information. If you have any questions or requests regarding your data, please contact us at <a href="mailto:contact@Eduford.com">contact@Eduford.com</a>.
+            </p>
+        
+            <h2>7. Policy Updates</h2>
+            <p>
+                We may update this Privacy Policy periodically to reflect changes in our practices or for legal or regulatory reasons. We encourage you to review this page regularly for updates.
+            </p>
+        
+            <h2>Contact Us</h2>
+            <p>
+                If you have any questions about this Privacy Policy, please contact us at:
+                <br>Email: <a href="mailto:support@Eduford.com">support@Eduford.com</a>
+            </p>
+        </section>
+        
+    </section>
+
+    
+ 
+    <section class="footer">
+        <div class="footer-logo">
+            <img src="Images/logo.png" alt="">
+            <p style="color: black;">support@Eduford.com</p>
+            <p style="color: black;">+91 7349432553</p>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="certified">
+                <img src="Images/iso.png" alt="ISO Certified">
+            </div>
+        </div>
+        <div>
+            <h2 style="margin-left: 250px;">For More Information Visit The Given Links</h2>
+            <p style="margin-top: 200px; margin-left: 300px;color: black; font-size: x-large;">&copy; 2024 Eduford. All Rights Reserved.</p>
+        </div>
+        <div class="footer-links">
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="privacy.html">Privacy policy</a></li>
+                    <li><a href="ioi.html">Eduford IOI</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+
+    // Check for saved theme in localStorage
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        body.classList.add('dark');
+        themeToggle.checked = true;
+    }
+
+    // Toggle theme and save preference
+    themeToggle.addEventListener('change', () => {
+        if (themeToggle.checked) {
+            body.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            body.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+        }
+    });
+});
+
+
+    </script>
+</body>
+</html>

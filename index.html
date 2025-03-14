@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0 ">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- fonts awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="Images/logo.png" alt=""></a>
+            <div class="navlinks" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html" data-key="home">HOME</a></li>
+                    <li><a href="about.html" data-key="about">ABOUT US</a></li>
+                    <li><a href="course.html" data-key="courses">COURSES</a></li>
+                    <li><a href="blog.html" data-key="blog">BLOG</as></li>
+                    <li><a href="contact.html" data-key="contact">CONTACT</a></li>
+                    <li><a href="login.html" data-key="register">REGISTER/LOGIN</a></li>
+                    <!-- Theme toggle switch -->
+                    <li>
+                        <div class="theme-toggle">
+                            <label for="themeToggle">Dark Mode</label>
+                            <input type="checkbox" id="themeToggle">
+                        </div>
+                    </li>
+                    <li>
+                        <div id="google_translate_element"></div>
+                    
+                     <script type="text/javascript">
+                      function googleTranslateElementInit() {
+                      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+                      }
+                    </script>
+                    
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="textbox">
+            <h1>Stay Ahead Of The Curve With Our <br> <span id="element"></span> <br>Courses</h1>
+            <p>Eduford is your one-stop-shop for upscaling. Get maximum value for time and resources you invest, with
+                job-ready courses & high-technology, available at the lowest cost.</p>
+            <a href="course.html" class="herobtn">Explore Courses</a>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Explore our diverse range of courses, designed to enhance your skills.</p>
+        <div class="course-container">
+            <div id="course-scroll">
+                <div class="course-box">
+                    <img src="images/DSA[1].png" alt="DSA in Java and C++">
+                    <h3>DSA IN JAVA AND C++</h3>
+                    <p>Learn data structures and algorithms in Java and C++, focusing on problem-solving techniques.
+                        Prepare for coding interviews and competitive programming.</p>
+                    <p class="fee">$199</p>
+                </div>
+                <div class="course-box">
+                    <img src="images/web_deveolpment[1].webp" alt="Web Development">
+                    <h3>WEB DEVELOPMENT</h3>
+                    <p>Master the skills to build modern websites using HTML, CSS, and JavaScript. Create responsive and
+                        dynamic websites with hands-on projects.</p>
+                    <p class="fee">$249</p>
+                </div>
+                <div class="course-box">
+                    <img src="images/machinelearning.avif" alt="Machine Learning">
+                    <h3>MACHINE LEARNING</h3>
+                    <p>Understand the basics of machine learning, including supervised and unsupervised learning
+                        techniques. Apply algorithms to real-world datasets.</p>
+                    <p class="fee">$299</p>
+                </div>
+                <div class="course-box">
+                    <img src="images/IOT[1].png" alt="Data Structures">
+                    <h3>IOT:INTERNET OF THINGS</h3>
+                    <p>This course covers essential data structures like arrays, linked lists, stacks, queues, and
+                        trees. Perfect for coding interviews and algorithm design.</p>
+                    <p class="fee">$149</p>
+                </div>
+                <div class="course-box">
+                    <img src="images/deeplearning[1].webp" alt="Digital Marketing">
+                    <h3>DEEP LEARNING</h3>
+                    <p>Learn the fundamentals of SEO, SEM, content marketing, social media marketing, and email
+                        campaigns to effectively promote online businesses.</p>
+                    <p class="fee">$179</p>
+                </div>
+                <div class="course-box">
+                    <img src="images/cybersecurity.jpg" alt="Cyber Security">
+                    <h3>CYBER SECURITY</h3>
+                    <p>Gain knowledge about securing networks, ethical hacking, cryptography, and more. Protect systems
+                        from vulnerabilities and online threats.</p>
+                    <p class="fee">$220</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- FEATURES -->
+    <section class="feature">
+        <h1>Course Features</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, quam.</p>
+        <div class="row">
+            <div class="featurecol">
+                <img src="Images/cetification.jpg" alt="" style="height: 430px;">
+                <div class="layer">
+                    <h3>COMPLETE CERTIFICATION</h3>
+                </div>
+            </div>
+
+            <div class="featurecol">
+                <img src="Images/placement_assistance.webp" alt="">
+                <div class="layer">
+                    <h3>PLACEMENT ASSISTANCE</h3>
+                </div>
+            </div>
+
+            <div class="featurecol">
+                <img src="Images/mentor.webp" alt="">
+                <div class="layer">
+                    <h3>ONE TO ONE MENTORSHIP</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- facilities -->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>We provide world-class resources to help you grow academically, professionally, and personally. Explore the
+            key facilities that set us apart.</p>
+        <div class="row">
+            <div class="facilitiescol">
+                <img src="Images/quizez.webp" alt="Quiz and Analysis">
+                <h3>QUIZZES AND PERFORMANCE ANALYSIS</h3>
+                <p>Engage in interactive quizzes and get detailed performance analytics to track your progress and
+                    identify areas for improvement.</p>
+            </div>
+
+            <div class="facilitiescol">
+                <img src="Images/onlineeditor.webp" alt="Online Code Editor">
+                <h3>INTEGRATED ONLINE CODE EDITOR</h3>
+                <p>Experience seamless coding with our built-in editor featuring real-time feedback, error highlighting,
+                    and collaboration tools.</p>
+            </div>
+
+            <div class="facilitiescol">
+                <img src="Images/project.jpg" alt="Project Work">
+                <h3>INDUSTRY-RELEVANT PROJECTS</h3>
+                <p>Work on real-world projects to enhance your practical skills and gain hands-on experience demanded by
+                    top industries.</p>
+            </div>
+
+            <div class="facilitiescol">
+                <img src="Images/resume.png" alt="Resume Building" style="height: 300px;">
+                <h3>PROFESSIONAL RESUME BUILDING</h3>
+                <p>Craft standout resumes with our expert-guided templates and tips to help you showcase your skills and
+                    achievements effectively.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonials -->
+    <section class="testimonials">
+        <h1>What Our Students Say</h1>
+        <p>Our students' success stories and feedback speak volumes about their experiences with us.</p>
+        <div class="row">
+            <div class="testimonialcol">
+                <img src="Images/user1.jpg" alt="Joana Jones">
+                <div>
+                    <p>The courses provided an excellent learning platform. The hands-on projects and supportive mentors
+                        helped me land my dream job in the tech industry.</p>
+                    <h3>Joana Jones</h3>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <div class="testimonialcol">
+                <img src="Images/user2.jpg" alt="Marshall Marry">
+                <div>
+                    <p>The interactive quizzes and real-time feedback were game-changers for me. I gained confidence and
+                        clarity in my learning journey.</p>
+                    <h3>Marshall Marry</h3>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <div class="testimonialcol">
+                <img src="Images/user3.jpg" alt="Joan Doe">
+                <div>
+                    <p>I was impressed with the personalized support and the practical approach to learning. The
+                        resume-building sessions were particularly helpful.</p>
+                    <h3>Joan Doe</h3>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- call to action -->
+    <section class="cta">
+        <h1>Enroll for our varoius online courses anywhere <br>from this world</h1>
+        <a href="contact.html" class="herobtn">Contact Us</a>
+    </section>
+
+    <section class="footer">
+        <div class="footer-logo">
+            <img src="Images/logo.png" alt="">
+            <p style="color: black;">support@Eduford.com</p>
+            <p style="color: black;">+91 7349432553</p>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="certified">
+                <img src="Images/iso.png" alt="ISO Certified">
+            </div>
+        </div>
+        <div>
+            <h2 style="margin-left: 250px;">For More Information Visit The Given Links</h2>
+            <p style="margin-top: 200px; margin-left: 300px;color: black; font-size: x-large;">&copy; 2024 Eduford. All
+                Rights Reserved.</p>
+        </div>
+        <div class="footer-links">
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="privacy.html">Privacy policy</a></li>
+                    <li><a href="ioi.html">Eduford IOI</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Maximize your learning potential at the lowest cost!', 'Get job-ready with top-tier courses & technology.', 'Upscale your skills without breaking the bank.', 'Learn the skills that matter, at the best price.', 'Your gateway to a brighter, more skilled future!'],
+            typeSpeed: 50,
+            loop: true
+        });
+    </script>
+
+</body>
+
+</html> 
